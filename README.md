@@ -35,3 +35,22 @@ To win, you need to correctly answer 3 questions in a row.
 [![asciicast](https://asciinema.org/a/363976.svg)](https://asciinema.org/a/363976)
 
 ---
+
+### Brain-calc
+
+#### Description
+
+You need to calculate the result of a mathematical expression.
+To win, you need to correctly answer 3 questions in a row.
+
+#### Launch
+
+`brain-calc`
+
+#### Victory
+
+[![asciicast](https://asciinema.org/a/364097.svg)](https://asciinema.org/a/364097)
+
+#### Defeat
+
+[![asciicast](https://asciinema.org/a/364098.svg)](https://asciinema.org/a/364098)

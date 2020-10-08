@@ -12,3 +12,5 @@ brain-games:
 	poetry run brain-games
 even:
 	poetry run brain-even
+calc:
+	poetry run brain-calc
