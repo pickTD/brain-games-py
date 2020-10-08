@@ -8,11 +8,13 @@
 
 `pip install --user --no-cache-dir --index-url https://test.pypi.org/simple --extra-index-url https://pypi.org/simple picktd-brain-games`
 
-[![asciicast](https://asciinema.org/a/363987.svg)](https://asciinema.org/a/363987)
+[![asciicast](https://asciinema.org/a/364111.svg)](https://asciinema.org/a/364111)
 
 ---
 
 ## Games
+
+To win, you need to correctly answer 3 questions in a row.
 
 ### Brain-even
 
@@ -20,19 +22,14 @@
 
 You will be prompted to determine if the specified number is even or not.
 Answer "yes" if the number is even, otherwise answer "no".
-To win, you need to correctly answer 3 questions in a row.
 
 #### Launch
 
 `brain-even`
 
-#### Victory
+#### Gameplay
 
-[![asciicast](https://asciinema.org/a/363975.svg)](https://asciinema.org/a/363975)
-
-#### Defeat
-
-[![asciicast](https://asciinema.org/a/363976.svg)](https://asciinema.org/a/363976)
+[![asciicast](https://asciinema.org/a/364106.svg)](https://asciinema.org/a/364106)
 
 ---
 
@@ -40,17 +37,29 @@ To win, you need to correctly answer 3 questions in a row.
 
 #### Description
 
-You need to calculate the result of a mathematical expression.
-To win, you need to correctly answer 3 questions in a row.
+Calculate the result of a mathematical expression.
 
 #### Launch
 
 `brain-calc`
 
-#### Victory
+#### Gameplay
 
-[![asciicast](https://asciinema.org/a/364097.svg)](https://asciinema.org/a/364097)
+[![asciicast](https://asciinema.org/a/364108.svg)](https://asciinema.org/a/364108)
 
-#### Defeat
+---
 
-[![asciicast](https://asciinema.org/a/364098.svg)](https://asciinema.org/a/364098)
+### Brain-gcd
+
+#### Description
+
+Find the greatest common divisor of given numbers.
+
+#### Launch
+
+`brain-gcd`
+
+#### Gameplay
+
+[![asciicast](https://asciinema.org/a/364110.svg)](https://asciinema.org/a/364110)
+
