@@ -1,15 +1,15 @@
-"""Brain-even game implementation."""
-
-import random
+"""Games engine."""
 
 import prompt
+
+GOAL = 3
 
 
 def acquaintance():
     """Ask for a username and greet him.
 
     Returns:
-        str: User entered name
+        str: User entered name.
     """
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
@@ -17,22 +17,27 @@ def acquaintance():
     return user_name
 
 
-def print_instructions():
-    """Print instructions for game."""
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+def print_instructions(instructions):
+    """Print instructions for game.
+
+    Args:
+        instructions (str): Instructions for game.
+    """
+    print(instructions)
 
 
-def play(user_name):
+def play(user_name, get_question, get_answer):
     """Start game.
 
     Args:
-        user_name (str): Player name
+        user_name (str): Player name.
+        get_question (function): Function returning a question.
+        get_answer (function): Function returning correct answer.
     """
     answers_count = 0
-    goal = 3
-    while answers_count < goal:
-        question = random.randint(1, 1024)
-        correct_answer = 'yes' if question % 2 == 0 else 'no'
+    while answers_count < GOAL:
+        question = get_question()
+        correct_answer = get_answer(question)
         print('Question: {0}'.format(question))
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:
