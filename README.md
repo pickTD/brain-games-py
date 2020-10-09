@@ -78,3 +78,20 @@ What number is missing in the progression?
 #### Gameplay
 
 [![asciicast](https://asciinema.org/a/364292.svg)](https://asciinema.org/a/364292)
+
+---
+
+### Brain-prime
+
+#### Description
+
+You will be prompted to determine if the specified number is prime or not.
+Answer "yes" if given number is prime. Otherwise answer "no".
+
+#### Launch
+
+`brain-prime`
+
+#### Gameplay
+
+[![asciicast](https://asciinema.org/a/364348.svg)](https://asciinema.org/a/364348)

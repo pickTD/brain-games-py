@@ -18,3 +18,5 @@ gcd:
 	poetry run brain-gcd
 prog:
 	poetry run brain-progression
+prime:
+	poetry run brain-prime
