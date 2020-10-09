@@ -63,3 +63,18 @@ Find the greatest common divisor of given numbers.
 
 [![asciicast](https://asciinema.org/a/364110.svg)](https://asciinema.org/a/364110)
 
+---
+
+### Brain-progression
+
+#### Description
+
+What number is missing in the progression?
+
+#### Launch
+
+`brain-progression`
+
+#### Gameplay
+
+[![asciicast](https://asciinema.org/a/364292.svg)](https://asciinema.org/a/364292)

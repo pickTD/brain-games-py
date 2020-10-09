@@ -1,7 +1,7 @@
 install:
 	poetry install
 package-install:
-	pip install --user dist/*.whl
+	pip install --no-cache-dir --user dist/*.whl
 build:
 	poetry build
 publish:
@@ -16,3 +16,5 @@ calc:
 	poetry run brain-calc
 gcd:
 	poetry run brain-gcd
+prog:
+	poetry run brain-progression
