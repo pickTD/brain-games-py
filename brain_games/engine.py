@@ -26,18 +26,16 @@ def print_instructions(instructions):
     print(instructions)
 
 
-def play(user_name, get_question, get_answer):
+def play(user_name, get_round):
     """Start game.
 
     Args:
         user_name (str): Player name.
-        get_question (function): Function returning a question.
-        get_answer (function): Function returning correct answer.
+        get_round (function): Function returning a question and correct answer.
     """
     answers_count = 0
     while answers_count < GOAL:
-        question = get_question()
-        correct_answer = get_answer(question)
+        [question, correct_answer] = get_round()
         print('Question: {0}'.format(question))
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:

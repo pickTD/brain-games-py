@@ -10,7 +10,7 @@ def main():
     """Brain-even game entry point."""
     user_name = engine.acquaintance()
     engine.print_instructions(even.INSTRUCTIONS)
-    engine.play(user_name, even.get_question, even.get_answer)
+    engine.play(user_name, even.get_round)
 
 
 if __name__ == '__main__':

@@ -5,22 +5,13 @@ import random
 INSTRUCTIONS = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def get_question():
-    """Сreate a question for one stage of game.
+def get_round():
+    """Сreate a question and answer for one stage of game.
 
     Returns:
-        int: Random number in range 1 - 100.
+        list: Question and correct answer for current round.
     """
-    return random.randint(1, 100)
+    question = random.randint(1, 100)
+    correct_answer = 'yes' if question % 2 == 0 else 'no'
 
-
-def get_answer(question):
-    """Сreate a question for one stage of game.
-
-    Args:
-        question (int): Number to compare with condition.
-
-    Returns:
-        str: Result of comparing number with condition.
-    """
-    return 'yes' if question % 2 == 0 else 'no'
+    return [question, correct_answer]

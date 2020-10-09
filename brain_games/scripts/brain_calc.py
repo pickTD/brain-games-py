@@ -10,7 +10,7 @@ def main():
     """Brain-calc game entry point."""
     user_name = engine.acquaintance()
     engine.print_instructions(calc.INSTRUCTIONS)
-    engine.play(user_name, calc.get_question, calc.get_answer)
+    engine.play(user_name, calc.get_round)
 
 
 if __name__ == '__main__':
