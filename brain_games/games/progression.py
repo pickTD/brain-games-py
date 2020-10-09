@@ -3,6 +3,8 @@
 import random
 
 INSTRUCTIONS = 'What number is missing in the progression?'
+MIN_PROGRESSION_LENGTH = 5
+MAX_PROGRESSION_LENGTH = 10
 
 
 def get_progression():
@@ -11,7 +13,10 @@ def get_progression():
     Returns:
         list: Arithmetic progression.
     """
-    progression_length = random.randint(5, 10)
+    progression_length = random.randint(
+        MIN_PROGRESSION_LENGTH,
+        MAX_PROGRESSION_LENGTH,
+    )
     start_point = random.randint(1, 100)
     increment = random.randint(1, 100)
     progression = []
