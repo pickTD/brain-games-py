@@ -32,7 +32,7 @@ def get_round():
     """Сreate a question and answer for one stage of game.
 
     Returns:
-        list: Question and correct answer for current round.
+        tuple: Question and correct answer for current round.
     """
     progression = get_progression()
     hidden_element_position = random.randint(0, len(progression) - 1)
@@ -41,4 +41,4 @@ def get_round():
     progression[hidden_element_position] = '..'
     question = ' '.join(map(str, progression))
 
-    return [question, correct_answer]
+    return question, correct_answer

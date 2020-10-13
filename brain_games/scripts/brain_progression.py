@@ -8,9 +8,7 @@ from brain_games.games import progression
 
 def main():
     """Brain-progression game entry point."""
-    user_name = engine.acquaintance()
-    engine.print_instructions(progression.INSTRUCTIONS)
-    engine.play(user_name, progression.get_round)
+    engine.play(progression.INSTRUCTIONS, progression.get_round)
 
 
 if __name__ == '__main__':

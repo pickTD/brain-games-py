@@ -33,9 +33,9 @@ def get_round():
     """Сreate a question and answer for one stage of game.
 
     Returns:
-        list: Question and correct answer for current round.
+        tuple: Question and correct answer for current round.
     """
     question = random.randint(1, 100)
     correct_answer = 'yes' if is_prime(question) else 'no'
 
-    return [question, correct_answer]
+    return question, correct_answer

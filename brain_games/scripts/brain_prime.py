@@ -8,9 +8,7 @@ from brain_games.games import prime
 
 def main():
     """Brain-prime game entry point."""
-    user_name = engine.acquaintance()
-    engine.print_instructions(prime.INSTRUCTIONS)
-    engine.play(user_name, prime.get_round)
+    engine.play(prime.INSTRUCTIONS, prime.get_round)
 
 
 if __name__ == '__main__':

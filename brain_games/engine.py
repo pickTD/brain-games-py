@@ -5,37 +5,20 @@ import prompt
 GOAL = 3
 
 
-def acquaintance():
-    """Ask for a username and greet him.
+def play(instructions, get_round):
+    """Start game.
 
-    Returns:
-        str: User entered name.
+    Args:
+        instructions (str): Instructions for game.
+        get_round (function): Function returning a question and correct answer.
     """
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(user_name))
-    return user_name
-
-
-def print_instructions(instructions):
-    """Print instructions for game.
-
-    Args:
-        instructions (str): Instructions for game.
-    """
     print(instructions)
-
-
-def play(user_name, get_round):
-    """Start game.
-
-    Args:
-        user_name (str): Player name.
-        get_round (function): Function returning a question and correct answer.
-    """
     answers_count = 0
     while answers_count < GOAL:
-        [question, correct_answer] = get_round()
+        question, correct_answer = get_round()
         print('Question: {0}'.format(question))
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:

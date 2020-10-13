@@ -10,7 +10,7 @@ def get_round():
     """Сreate a question and answer for one stage of game.
 
     Returns:
-        list: Question and correct answer for current round.
+        tuple: Question and correct answer for current round.
     """
     number_one = random.randint(1, 100)
     number_two = random.randint(1, 100)
@@ -18,4 +18,4 @@ def get_round():
     gcd = math.gcd(number_one, number_two)
     correct_answer = str(gcd)
 
-    return [question, correct_answer]
+    return question, correct_answer
