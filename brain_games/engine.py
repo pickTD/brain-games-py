@@ -21,15 +21,14 @@ def play(instructions, get_round):
         question, correct_answer = get_round()
         print('Question: {0}'.format(question))
         answer = prompt.string('Your answer: ')
-        if answer == correct_answer:
-            print('Correct!')
-            answers_count += 1
-        else:
+        if answer != correct_answer:
             print((
                 "'{0}' is wrong answer ;(. Correct answer was '{1}'."
                 ).format(answer, correct_answer),
             )
             print("Let's try again, {0}!".format(user_name))
             break
+        print('Correct!')
+        answers_count += 1
     else:
         print('Congratulations, {0}!'.format(user_name))

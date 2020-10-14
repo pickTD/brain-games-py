@@ -20,10 +20,10 @@ def get_progression():
     start_point = random.randint(1, 100)
     increment = random.randint(1, 100)
     progression = []
-    current_element = start_point
+    index = 0
     while len(progression) < progression_length:
-        progression.append(current_element)
-        current_element += increment
+        progression.append(start_point + increment * index)
+        index += 1
 
     return progression
 

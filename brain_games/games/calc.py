@@ -14,7 +14,7 @@ def calculate(operand_one, operand_two, operator):
         operator (str): String representation of a mathematical operator.
 
     Returns:
-        srt: String representation of the evaluated expression.
+        int: Evaluated expression.
     """
     if operator == '+':
         calculation = operand_one + operand_two
@@ -24,7 +24,7 @@ def calculate(operand_one, operand_two, operator):
         calculation = operand_one * operand_two
     else:
         return 'Incorrect operator'
-    return str(calculation)
+    return calculation
 
 
 def get_round():
@@ -37,6 +37,6 @@ def get_round():
     operand_two = random.randint(1, 100)
     operator = random.choice(['+', '-', '*'])
     question = '{0} {1} {2}'.format(operand_one, operator, operand_two)
-    correct_answer = calculate(operand_one, operand_two, operator)
+    correct_answer = str(calculate(operand_one, operand_two, operator))
 
     return question, correct_answer
