@@ -2,13 +2,12 @@
 
 """Brain-even game entry point."""
 
-from brain_games import engine
 from brain_games.games import even
 
 
 def main():
     """Brain-even game entry point."""
-    engine.play(even.INSTRUCTIONS, even.get_round)
+    even.play()
 
 
 if __name__ == '__main__':

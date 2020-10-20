@@ -2,6 +2,8 @@
 
 import random
 
+from brain_games import engine
+
 INSTRUCTIONS = 'What is the result of the expression?'
 
 
@@ -13,6 +15,9 @@ def calculate(operand_one, operand_two, operator):
         operand_two (int): Second operand of expression.
         operator (str): String representation of a mathematical operator.
 
+    Raises:
+        ValueError: If operator is unknown
+
     Returns:
         int: Evaluated expression.
     """
@@ -23,7 +28,7 @@ def calculate(operand_one, operand_two, operator):
     elif operator == '*':
         calculation = operand_one * operand_two
     else:
-        return 'Incorrect operator'
+        raise ValueError('Unknown operator:', operator)
     return calculation
 
 
@@ -40,3 +45,8 @@ def get_round():
     correct_answer = str(calculate(operand_one, operand_two, operator))
 
     return question, correct_answer
+
+
+def play():
+    """Start the game."""
+    engine.play(INSTRUCTIONS, get_round)

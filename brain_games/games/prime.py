@@ -3,6 +3,8 @@
 import math
 import random
 
+from brain_games import engine
+
 INSTRUCTIONS = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
@@ -39,3 +41,8 @@ def get_round():
     correct_answer = 'yes' if is_prime(question) else 'no'
 
     return question, correct_answer
+
+
+def play():
+    """Start the game."""
+    engine.play(INSTRUCTIONS, get_round)

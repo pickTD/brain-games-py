@@ -2,6 +2,8 @@
 
 import random
 
+from brain_games import engine
+
 INSTRUCTIONS = 'What number is missing in the progression?'
 MIN_PROGRESSION_LENGTH = 5
 MAX_PROGRESSION_LENGTH = 10
@@ -42,3 +44,8 @@ def get_round():
     question = ' '.join(map(str, progression))
 
     return question, correct_answer
+
+
+def play():
+    """Start the game."""
+    engine.play(INSTRUCTIONS, get_round)

@@ -3,6 +3,8 @@
 import math
 import random
 
+from brain_games import engine
+
 INSTRUCTIONS = 'Find the greatest common divisor of given numbers.'
 
 
@@ -19,3 +21,8 @@ def get_round():
     correct_answer = str(gcd)
 
     return question, correct_answer
+
+
+def play():
+    """Start the game."""
+    engine.play(INSTRUCTIONS, get_round)
